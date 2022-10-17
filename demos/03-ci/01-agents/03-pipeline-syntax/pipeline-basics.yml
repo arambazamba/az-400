@@ -51,7 +51,8 @@ stages:
               targetType: 'inline'
               script: echo 'Executing JobB'
 
-  - stage: stageB    
+  - stage: stageB
+    dependsOn: stageA   
     # pool:
     #   vmImage: "ubuntu-latest"
 
