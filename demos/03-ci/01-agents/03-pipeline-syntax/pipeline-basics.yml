@@ -53,10 +53,10 @@ stages:
 
   - stage: stageB    
     # pool:
-    #   vmImage: "ubuntu-latest"  
+    #   vmImage: "ubuntu-latest"      
 
     jobs:
-      - job: stageBJobA
+      - job: stageBJobA        
 
         steps:
           - task: Bash@3
