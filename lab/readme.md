@@ -1,6 +1,10 @@
+# Lab 15 fix
 
+- You will have to create the ressource group first
 
+- Corrected bicep:
 
+```bicep
 @description('Username for the Virtual Machine.')
 param adminUsername string
 
@@ -58,7 +62,7 @@ param publicIpSku string = 'Basic'
 param OSVersion string = '2022-datacenter-azure-edition'
 
 @description('Size of the virtual machine.')
-param vmSize string = 'Standard_D2s_v5'
+param vmSize string = 'Standard_B1s'
 
 @description('Location for all resources.')
 param location string = resourceGroup().location
@@ -256,3 +260,4 @@ resource vmExtension 'Microsoft.Compute/virtualMachines/extensions@2022-03-01' =
 }
 
 output hostname string = publicIp.properties.dnsSettings.fqdn
+```
