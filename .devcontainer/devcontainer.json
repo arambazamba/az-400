@@ -1,11 +1,13 @@
 {
     "image": "mcr.microsoft.com/devcontainers/universal:2",
     "features": {
+      "ghcr.io/devcontainers/features/dotnet:1": {},
       "ghcr.io/devcontainers/features/azure-cli:1": {},
       "ghcr.io/devcontainers/features/docker-in-docker:2": {},
       "ghcr.io/devcontainers-contrib/features/angular-cli:2": {},
       "ghcr.io/devcontainers/features/node:1": {
         "version": "16"
-      }     
+      },
+      "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}
     }
   }
