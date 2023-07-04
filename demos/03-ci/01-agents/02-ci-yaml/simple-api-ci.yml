@@ -36,6 +36,10 @@ stages:
               command: "publish"
               publishWebProjects: true
               arguments: "--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)"
+          
+          - task: CmdLine@2
+            inputs:
+              script: 'ls'
 
           - task: PublishPipelineArtifact@1
             inputs:
