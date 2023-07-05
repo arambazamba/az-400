@@ -1,11 +1,11 @@
 env=e2e-test
 grp=az400-m04-$env
 loc=westeurope
-api=arambazamba/food-catalog-api:latest
-ui=arambazamba/food-shop-ui:latest
+api=arambazamba/food-catalog-api:1.1.0
+ui=arambazamba/food-shop-ui
 
 az group create -n $grp -l $loc
 
-az container create -g $grp -l $loc -n food-catalog-api --image $api --cpu 1 --memory 1 --dns-name-label food-catalog-api-$env --port 80 --no-wait
+az container create -g $grp -l $loc -n food-catalog-api --image $api --cpu 1 --memory 1 --dns-name-label food-catalog-api-$env --port 80
 
-az container create -g $grp -l $loc -n food-shop-ui --image $ui --cpu 1 --memory 1 --dns-name-label food-shop-ui-$env --port 80 --environment-variables ENV_API_URL="http://food-catalog-api-$env.westeurope.azurecontainer.io/" --no-wait
+az container create -g $grp -l $loc -n food-shop-ui --image $ui --cpu 1 --memory 1 --dns-name-label food-shop-ui-$env --port 80 --environment-variables ENV_API_URL="http://food-catalog-api-$env.westeurope.azurecontainer.io/"
