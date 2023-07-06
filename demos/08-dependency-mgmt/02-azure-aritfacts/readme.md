@@ -11,6 +11,7 @@
 - Source Code is located at [https://github.com/arambazamba/az-400-dependencies](https://github.com/arambazamba/az-400-dependencies)
 
 - Explain Azure Artifacts
+- Create a Feed in Azure Artifacts and assign permissions to the [PROJECT]\Build Service ([PROJECT] is the name of your Azure DevOps project)
 - Checkout commit with tag `initial-project` and explaing the relation between the two projects in `food-api.csproj`
 - Explain and run `az-pipelines/publish-foodcalc.yml` and mention GitVersion settings
 - Explain [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider) and [Device Auth Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-device-code)
