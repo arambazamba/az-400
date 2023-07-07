@@ -18,7 +18,7 @@ Link your Azure Boards project to the Azure Boards app:
 
 ```
 @azure boards link [project url]
-@azure boards link https://dev.azure.com/integrations-training/M17-SystemFeedback
+@azure boards link https://dev.azure.com/integrations-training/az-400
 ```
 
 Subscribe to Azure Board Status Change:
@@ -37,7 +37,7 @@ Start monitoring all pipelines in project
 
 ```
 @azure pipelines subscribe https://dev.azure.com/myorg/myproject/
-@azure pipelines subscribe https://dev.azure.com/integrations-training/M17-SystemFeedback
+@azure pipelines subscribe https://dev.azure.com/integrations-training/az-400
 ```
 
 Show Approval, Run the pipeline in Azure Devops
