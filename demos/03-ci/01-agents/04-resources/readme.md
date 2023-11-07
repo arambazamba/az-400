@@ -5,7 +5,7 @@
 ## Demos 
 
  - Create and use variable groups in Azure Pipelines
- - Use mulitple repos in a pipeline
+ - Use multiple repos in a pipeline
 
 ## Create and use variable groups in Azure Pipelines
 

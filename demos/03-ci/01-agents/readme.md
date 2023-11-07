@@ -4,7 +4,7 @@
 
 -   CI using designer pipelines
 -   CI using yaml pipelines
--   Pipelines & YAML: basics, expressions & conditions, variabes, triggers
+-   Pipelines & YAML: basics, expressions & conditions, variables, triggers
 -   Pipeline Resources
 -   Implementing Custom Agents
     -   Configure a self hosted agent on an Azure Windows VM (optional)

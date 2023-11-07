@@ -3,7 +3,7 @@
 ## Demos
 
 - Gates & Environments Basics 
-- Implementing a custom gate using Azure Functionsn (optional)
+- Implementing a custom gate using Azure Functions (optional)
 
 ## Readings
 

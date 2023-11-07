@@ -3,7 +3,7 @@
 ## Demos
 
 - Pipeline Basics
-- Continuous Integration / Continous Deployment
+- Continuous Integration / Continuous Deployment
     - .NET MVC / WebApi Continuous Integration
     - Azure Static Web App with Angular UI Continuous Integration
 - GitHub Script Overview (optional)

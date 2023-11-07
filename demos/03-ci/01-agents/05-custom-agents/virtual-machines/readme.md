@@ -1,10 +1,8 @@
 # Configure a self hosted agent on an Azure Windows VM
 
-
-
 [Self-hosted Windows agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops)
 
-[Buildtools für Visual Studio](https://visualstudio.microsoft.com/de/downloads)
+[Build tools für Visual Studio](https://visualstudio.microsoft.com/de/downloads)
 
 [Agent Demands](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/demands?view=azure-devops&tabs=yaml)
 

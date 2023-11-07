@@ -2,4 +2,4 @@
 
 - Task groups
 - Templates
-- Deplyoment groups
+- Deployment groups

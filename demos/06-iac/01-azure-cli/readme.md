@@ -28,7 +28,7 @@ az extension add --name <extension-name>
 
 ## Install Azure CLI
 
-Install Chocoolatey in an elevated Prompt:
+Install Chocolatey in an elevated Prompt:
 
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))

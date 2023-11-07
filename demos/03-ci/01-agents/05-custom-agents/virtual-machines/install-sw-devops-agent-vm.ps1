@@ -14,7 +14,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; 
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-# Install Software
+# Install SDKS und Tools
 choco install googlechrome -y
 choco install vscode -y
 choco install git -y
@@ -24,6 +24,8 @@ choco install dotnetcore-sdk -y
 choco install dotnet-6.0-sdk -y
 choco install visualstudio2019buildtools -y
 choco install nodejs --version=14.15.0 -y
+
+# Install Azure DevOps Agent
 choco install azure-pipelines-agent --params "'/Directory:c:\agent'" -y
 
 # Refresh Path Env for npm 

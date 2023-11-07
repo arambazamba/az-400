@@ -1,6 +1,6 @@
-# Microsoft 365 SharePoint and Teams Webpart Deployment
+# Microsoft 365 SharePoint and Teams WebPart Deployment
 
-# Demos: Microsoft 365 SharePoint and Teams Webpart Deployment using Key Vault
+# Demos: Microsoft 365 SharePoint and Teams WebPart Deployment using Key Vault
 
 - Create Keyvault using `create-vault.azcli`
 - Import Pipeline `Deploy WP M365 CLI and KV.json`
