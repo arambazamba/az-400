@@ -2,7 +2,7 @@
 
 ## Demos
 
-- Show Package Repos: NuGet, npmjs, ... and explain Semantic Versioning
+- Show Package Repos: NuGet, NpmJS, ... and explain Semantic Versioning
 - Create a Package & Publish Package to Feed and consume it
 
 ## Additional Labs & Walkthroughs

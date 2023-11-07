@@ -1,4 +1,4 @@
-# Teams Tab using SharePoint Framework (SPFx) Continous Integration
+# Teams Tab using SharePoint Framework (SPFx) Continuous Integration
 
 Uses SPFx Sample Repo [https://github.com/arambazamba/teams-devops](https://github.com/arambazamba/teams-devops)
 

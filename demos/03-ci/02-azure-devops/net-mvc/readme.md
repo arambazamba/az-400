@@ -1,4 +1,4 @@
-# .NET MVC Continous Integration
+# .NET MVC Continuous Integration
 
 Samples are included in the .NET MVC repo available at [mvc-devops](https://github.com/arambazamba/mvc-devops)
 

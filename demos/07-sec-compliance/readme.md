@@ -7,7 +7,7 @@
 - Static Analysis
 - Open Web Application Security Project (OWASP)
 - Azure Policy
-- Azure Blueprint
+- Azure Blueprint (Optional)
 
 ## Additional Labs & Walkthroughs
 

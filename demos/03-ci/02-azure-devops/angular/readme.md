@@ -1,4 +1,4 @@
-# Angular Continous Integration
+# Angular Continuous Integration
 
 Samples are included in the Angular repo available at [angular-devops](https://github.com/arambazamba/angular-devops)
 

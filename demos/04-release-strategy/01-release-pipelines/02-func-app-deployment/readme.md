@@ -3,9 +3,9 @@
 - Implements Typescript based DoDouble Function
 - Multistage Pipeline with build, provision and deployment
 
-Souce Code located at [https://github.com/arambazamba/func-devops](https://github.com/arambazamba/func-devops)
+Source Code located at [https://github.com/arambazamba/func-devops](https://github.com/arambazamba/func-devops)
 
-- Excute Provisioning Script
+- Execute Provisioning Script
 
     ```bash
     env=$RANDOM
@@ -21,6 +21,6 @@ Souce Code located at [https://github.com/arambazamba/func-devops](https://githu
     az functionapp create -n $app -g $grp --storage-account $storage --consumption-plan-location $loc --runtime node --runtime-version 14 --functions-version 4
     ```
 
-- Create ARM Service Connection to ressource group
+- Create ARM Service Connection to resource group
 
 - Pipeline to import / execute: `func-cicd.yaml`

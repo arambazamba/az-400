@@ -12,7 +12,7 @@ Make sure you set the vars on the pipeline:
 
 ## Readings & Tools:
 
-[Übersicht über Defender for DevOps](https://learn.microsoft.com/de-de/azure/defender-for-cloud/defender-for-devops-introduction?ocid=AID754288&wt.mc_id=azfr-c9-scottha%2CCFID0709)
+[Defender for DevOps](https://learn.microsoft.com/de-de/azure/defender-for-cloud/defender-for-devops-introduction?ocid=AID754288&wt.mc_id=azfr-c9-scottha%2CCFID0709)
 
 [Overview of Microsoft Defender for Containers](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-introduction)
 

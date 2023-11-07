@@ -1,4 +1,4 @@
-# Function Apps Continous Integration
+# Function Apps Continuous Integration
 
 Samples are included in the Angular repo available at [func-devops](https://github.com/arambazamba/func-devops)
 

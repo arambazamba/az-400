@@ -25,7 +25,7 @@
     ![outcome](_images/outcome.png)
 
 
-- To get back from the Azure Function to your Azure DevOps Organisation use this pattern documented [here](
+- To get back from the Azure Function to your Azure DevOps Organization use this pattern documented [here](
 https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/azure-function?view=azure-devops)
 
     ```Json

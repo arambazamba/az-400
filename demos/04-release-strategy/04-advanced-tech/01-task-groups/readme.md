@@ -6,7 +6,7 @@
 
 [CLI for Microsoft 365](https://pnp.github.io/cli-microsoft365/)
 
-## Demo: Use Taskgroup with SPFx WP and Microsoft 365 CLI
+## Demo: Use Task Groups with SPFx WP and Microsoft 365 CLI
 
 Import `spfx-build.yaml`:
 
@@ -62,7 +62,7 @@ It is used in the [M365-CLI Task](https://pnp.github.io/cli-microsoft365/cmd/spo
 
 ![m365-cli](_images/m365-cli.png)
 
-Refactor to Taskgroup:
+Refactor to Task Group:
 
 ![taskgroup](_images/taskgroup.png)
 
