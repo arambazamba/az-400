@@ -1,0 +1,24 @@
+env=dev
+loc=westeurope
+grp=az-400-$env
+logws=az-400-log-$env
+acr=acrcontainersdev
+acaenv=acaenv-az-400-$env
+ai=az400ai-$env
+
+az group create -n $grp -l $loc
+
+az acr create -g $grp -n $acr --sku Basic --admin-enabled true
+acrPwd=$(az acr credential show -n $acr --query passwords[0].value -o tsv) 
+loginSrv=$(az acr list --query "[?name=='$acr'].loginServer" -o tsv) 
+
+az deployment group create -f main.bicep -g $grp \
+    -p appName='foodapp' \
+    -p rgLocation=westeurope \
+    -p acaEnvName=$acaenv \
+    -p acrName=$acr \
+    -p acrPwd=$acrPwd \
+    -p catalogName='food-catalog' \
+    -p catalogImage='catalog-service' \
+    -p shopName='food-shop' \
+    -p shopImage='shop-ui' 
