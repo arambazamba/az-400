@@ -1,4 +1,4 @@
-# Healt Inspection
+# Health Inspection
 
 [Azure DevOps Notifications](https://docs.microsoft.com/en-us/azure/devops/notifications/about-notifications?view=azure-devops)
 

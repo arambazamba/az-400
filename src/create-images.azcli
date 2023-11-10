@@ -1,0 +1,19 @@
+env=dev
+loc=westeurope
+grp=az-native-$env
+acr=acrcontainers$env
+imgCatalog=catalog-service
+imgShopUI=shop-ui
+
+az group create -n $grp -l $loc
+az acr create -g $grp -n $acr --sku Basic
+az acr login --name $acr
+az acr update -n $acr --admin-enabled true
+
+cd web/food-shop
+az acr build --image $imgShopUI --registry $acr --file dockerfile .
+cd ../..
+
+cd services/catalog-service
+az acr build --image $imgCatalog --registry $acr --file dockerfile .
+cd ../..

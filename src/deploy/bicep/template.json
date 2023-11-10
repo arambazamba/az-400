@@ -1,0 +1,132 @@
+{
+  "id": "/subscriptions/78033352-805c-4acd-af80-f8f95083268d/resourceGroups/az-native-dev/providers/Microsoft.App/containerapps/catalog",
+  "identity": {
+    "principalId": "22430752-5df3-4a97-8398-73ffe7612d89",
+    "tenantId": "d92b247e-90e0-4469-a129-6a32866c0d0a",
+    "type": "SystemAssigned"
+  },
+  "location": "West Europe",
+  "name": "catalog",
+  "properties": {
+    "configuration": {
+      "activeRevisionsMode": "Single",
+      "dapr": null,
+      "ingress": {
+        "additionalPortMappings": null,
+        "allowInsecure": false,
+        "clientCertificateMode": null,
+        "corsPolicy": null,
+        "customDomains": null,
+        "exposedPort": 0,
+        "external": false,
+        "fqdn": "catalog.internal.greendesert-0c4350be.westeurope.azurecontainerapps.io",
+        "ipSecurityRestrictions": null,
+        "stickySessions": {
+          "affinity": "none"
+        },
+        "targetPort": 80,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "weight": 100
+          }
+        ],
+        "transport": "Auto"
+      },
+      "maxInactiveRevisions": null,
+      "registries": [
+        {
+          "identity": "",
+          "passwordSecretRef": "reg-pswd-061c8ab9-aaeb",
+          "server": "aznativecontainersdev.azurecr.io",
+          "username": "aznativecontainersdev"
+        }
+      ],
+      "secrets": [
+        {
+          "name": "reg-pswd-061c8ab9-aaeb"
+        },
+        {
+          "name": "azure-keyvault-resourceendpoint-114a8"
+        },
+        {
+          "name": "azure-keyvault-scope-030cc"
+        }
+      ],
+      "service": null
+    },
+    "customDomainVerificationId": "1387F783D35B4E628CFECBEF659048D3844B3364AFAB806A32607A7B0D3AA59F",
+    "environmentId": "/subscriptions/78033352-805c-4acd-af80-f8f95083268d/resourceGroups/az-native-dev/providers/Microsoft.App/managedEnvironments/acaenv-az-native-dev",
+    "eventStreamEndpoint": "https://westeurope.azurecontainerapps.dev/subscriptions/78033352-805c-4acd-af80-f8f95083268d/resourceGroups/az-native-dev/containerApps/catalog/eventstream",
+    "latestReadyRevisionName": "catalog--hcvm3fq",
+    "latestRevisionFqdn": "catalog--hcvm3fq.internal.greendesert-0c4350be.westeurope.azurecontainerapps.io",
+    "latestRevisionName": "catalog--hcvm3fq",
+    "managedEnvironmentId": "/subscriptions/78033352-805c-4acd-af80-f8f95083268d/resourceGroups/az-native-dev/providers/Microsoft.App/managedEnvironments/acaenv-az-native-dev",
+    "outboundIpAddresses": [
+      "20.103.135.29",
+      "20.103.134.29",
+      "20.103.132.54",
+      "20.103.134.224",
+      "4.175.88.205",
+      "4.175.89.31",
+      "4.175.89.19",
+      "4.175.89.7",
+      "51.137.8.84",
+      "51.137.8.250",
+      "40.114.177.194",
+      "40.114.177.222"
+    ],
+    "provisioningState": "Succeeded",
+    "runningStatus": "Running",
+    "template": {
+      "containers": [
+        {
+          "env": [
+            {
+              "name": "ddd",
+              "value": "uuu"
+            },
+            {
+              "name": "AZURE_KEYVAULT_RESOURCEENDPOINT",
+              "secretRef": "azure-keyvault-resourceendpoint-114a8"
+            },
+            {
+              "name": "AZURE_KEYVAULT_SCOPE",
+              "secretRef": "azure-keyvault-scope-030cc"
+            }
+          ],
+          "image": "aznativecontainersdev.azurecr.io/catalog-service:latest",
+          "name": "catalog",
+          "probes": [],
+          "resources": {
+            "cpu": 0.5,
+            "ephemeralStorage": "2Gi",
+            "memory": "1Gi"
+          }
+        }
+      ],
+      "initContainers": null,
+      "revisionSuffix": "",
+      "scale": {
+        "maxReplicas": 10,
+        "minReplicas": 0,
+        "rules": null
+      },
+      "serviceBinds": null,
+      "terminationGracePeriodSeconds": null,
+      "volumes": []
+    },
+    "workloadProfileName": "Consumption"
+  },
+  "resourceGroup": "az-native-dev",
+  "systemData": {
+    "createdAt": "2023-11-09T18:07:06.0656056",
+    "createdBy": "alexander.pajer@integrations.at",
+    "createdByType": "User",
+    "lastModifiedAt": "2023-11-09T18:09:43.3682666",
+    "lastModifiedBy": "alexander.pajer@integrations.at",
+    "lastModifiedByType": "User"
+  },
+  "tags": {},
+  "type": "Microsoft.App/containerApps"
+}
