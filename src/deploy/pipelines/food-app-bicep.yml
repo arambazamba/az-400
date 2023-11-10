@@ -1,0 +1,23 @@
+name: deploy-food-app-bicep
+
+trigger: none
+pr: none
+
+pool: 
+  vmImage: "ubuntu-20.04"
+
+stages:
+  - stage: Deploy
+    jobs:
+    - job: Deploy
+      steps:
+      - task: AzureCLI@2
+          displayName: 'Provision AppService'
+          inputs:
+            azureSubscription: '$(azSubscription)'
+            scriptType: 'bash'
+            scriptLocation: 'inlineScript'
+            inlineScript: |
+              az deployment group create --resource-group $(rg) \
+                --template-file $(templateFile) \
+                --parameters webAppName=$(appservice)
