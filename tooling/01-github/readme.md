@@ -56,7 +56,7 @@ git add file.txt | *.ts
 Commit files:
 
 ```
-git commit -m "your checkin comment"
+git commit -m "your check-in comment"
 ```
 
 ## Branching
@@ -76,7 +76,7 @@ git branch -r
 Create Branch:
 
 ```
-git branch feature/myfeature
+git branch feature/<my_feature>
 ```
 
 Push new Branch to remote:
@@ -116,7 +116,7 @@ git checkout -b <designated-local-name> origin/<remote-branch-name>
 
 ## Checkout specific Commits
 
-Get a spcific Commit:
+Get a specific Commit:
 
 ```bash
 git checkout <sha1>
@@ -146,7 +146,7 @@ git branch save-detached-head
 
 ## Changing Branches
 
-Saving work befor switching the branch - alternative to stage and commit:
+Saving work before switching the branch - alternative to stage and commit:
 
 ```bash
 git stash | git stash push
@@ -178,7 +178,7 @@ Cleaning up after branch switches - ie to remove untracked files from other bran
 -fx flag is used to remove untracked and ignored files.
 
 ```
-git clean -fd | git clean -f folderpath 
+git clean -fd | git clean -f folder-path 
 ```
 
 Update a Branch from master / main:
@@ -319,7 +319,7 @@ GitFlow is a branching model for Git, created by Vincent Driessen. It has attrac
 
 > Note: Require GIT 2.24.0+ - Check with `git --version`
 
-Initialize repo for gitflow:
+Initialize repo for git-flow:
 
 ```
 git flow init
@@ -328,19 +328,19 @@ git flow init
 Start a new feature:
 
 ```
-git flow feature start MYFEATURE
+git flow feature start <MY_FEATURE>
 ```
 
 Finish feature:
 
 ```
-git flow feature finish MYFEATURE
+git flow feature finish <MY_FEATURE>
 ```
 
 Publish a feature:
 
 ```
-git flow feature publish  MYFEATURE
+git flow feature publish  <MY_FEATURE>
 ```
 
 Start a release:

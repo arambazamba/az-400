@@ -27,7 +27,7 @@ az vm create -g $grp -n $vmname --admin-username $user --admin-password $pwd \
 
 Connect to VM:
 
-Go to Ressource Group `az-lab` and connect to VM using RDP and the credentials that you have used in the script:
+Go to Resource Group `az-lab` and connect to VM using RDP and the credentials that you have used in the script:
 
 Download RDP File:
 

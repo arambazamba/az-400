@@ -21,7 +21,7 @@ Enable Kubernetes:
 
 Press Appy & Restart to complete Docker Setup
 
-Create an account at [Docker Hub](https://hub.docker.com/) and signin to Docker
+Create an account at [Docker Hub](https://hub.docker.com/) and sign-in to Docker
 
 ![docker-sign-in](_images/docker-sign-in.png)
 

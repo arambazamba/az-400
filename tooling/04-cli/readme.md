@@ -26,7 +26,7 @@ Chose Bash and your subscription
 
 ![chose-bash](_images/chose-bash.jpg)
 
-Optional: Give a meaningfull name to your Clould Shell Storage using Advanced Settings:
+Optional: Give a meaningfull name to your Cloud Shell Storage using Advanced Settings:
 
 ![set-storage](_images/set-storage.jpg)
 
@@ -85,7 +85,7 @@ az group create -n $grp -l $loc
 az appservice plan create -n $appPlan -g $grp --sku B2
 ```
 
-> Note: You could also execute `creat-app-service.azcli` or run the following remote script in Cloud Shell
+> Note: You could also execute `create-app-service.azcli` or run the following remote script in Cloud Shell
 
 ```
 curl https://raw.githubusercontent.com/ARambazamba/az-400/master/setup/create-lab-vm.sh | bash
@@ -93,15 +93,15 @@ curl https://raw.githubusercontent.com/ARambazamba/az-400/master/setup/create-la
 
 #### Create a Lab VM
 
-If you want to execute the labs on a machine where you have full controll please follow this guide:
+If you want to execute the labs on a machine where you have full control please follow this guide:
 
 - Execute `create-lab-vm.azcli`
-- Wait unitl the machine has been pvovisioned
+- Wait until the machine has been provisioned
 - Connect to the VM using RDP
 - Execute `Set-ExecutionPolicy bypass` in an elevated prompt using `run as administrator`
 - Execute the script `setup-az-400.ps1` in an elevated prompt
 
-> Note: To connect use the credientials from script `create-lab-vm.azcli`
+> Note: To connect use the credentials from script `create-lab-vm.azcli`
 
 ```
 rnd=$RANDOM
